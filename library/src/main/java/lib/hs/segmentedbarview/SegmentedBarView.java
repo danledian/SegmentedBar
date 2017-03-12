@@ -279,7 +279,7 @@ public class SegmentedBarView extends View{
 
 
     public void setChangePosition(){
-        if(clickPosition != select){
+        if(clickPosition != -1 && clickPosition != select){
             select = clickPosition;
             clickPosition = -1;
             onSegItemClick(getItem(select), select);
