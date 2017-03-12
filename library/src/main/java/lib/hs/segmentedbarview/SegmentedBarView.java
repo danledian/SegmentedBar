@@ -206,8 +206,10 @@ public class SegmentedBarView extends View{
             return false;
         if(event.getAction() == MotionEvent.ACTION_DOWN ||
                 event.getAction() == MotionEvent.ACTION_MOVE){
-            clickPosition = getPosition(event.getX());
-            invalidate();
+            if(isContain(event.getX(), event.getY())){
+                clickPosition = getPosition(event.getX());
+                invalidate();
+            }
             return true;
         }else if(event.getAction() == MotionEvent.ACTION_UP){
             setChangePosition();
@@ -215,6 +217,11 @@ public class SegmentedBarView extends View{
         return super.onTouchEvent(event);
     }
 
+    private boolean isContain(float x, float y){
+        return x >=outerMarginWidth  && x <= getMeasuredWidth() - outerMarginWidth &&
+                y > outerMarginWidth && y <= getMeasuredHeight() - outerMarginWidth;
+
+    }
 
 
     public void setChangePosition(){
