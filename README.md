@@ -30,8 +30,8 @@
 ###  初始化
 
         List<SegmentItem> mList = new ArrayList<>();
-        mList.add(new SegmentItem("消息"));
-        mList.add(new SegmentItem("电话"));
+        mList.add(new SegmentItem(getResources().getString(R.string.message)));
+        mList.add(new SegmentItem(getResources().getString(R.string.phone)));
         mSegmentedBarView.addSegmentedBars(mList);
 
 ###  添加监听

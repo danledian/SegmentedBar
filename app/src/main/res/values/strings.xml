@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SegmentedBar</string>
+    <string name="message">消息</string>
+    <string name="phone">电话</string>
 </resources>
