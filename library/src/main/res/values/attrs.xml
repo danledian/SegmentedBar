@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SegmentedBarView">
+
+        <attr name="seg_outerRadii" format="dimension|reference"/>
+
+        <attr name="seg_outerMarginWidth" format="dimension|reference"/>
+
+        <attr name="seg_selectedColor" format="color|reference"/>
+
+        <attr name="seg_unSelectedColor" format="color|reference"/>
+
+        <attr name="seg_outerMarginColor" format="color|reference"/>
+
+        <attr name="seg_selectedTextColor" format="color|reference"/>
+
+        <attr name="seg_unSelectedTextColor" format="color|reference"/>
+
+        <attr name="seg_isShowLine" format="boolean"/>
+
+        <attr name="seg_textSize" format="dimension|reference"/>
+
+        <attr name="seg_isCircleFrame" format="boolean|reference"/>
+
+    </declare-styleable>
+
+</resources>

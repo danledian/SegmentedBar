@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#12B7F5">
+
+        <lib.hs.segmentedbarview.SegmentedBarView
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            android:id="@+id/segmentedBarView"
+            android:layout_gravity="center"
+            app:seg_selectedTextColor="#00A5E0"
+            app:seg_unSelectedTextColor="@android:color/white"
+            app:seg_selectedColor="@android:color/white"
+            app:seg_unSelectedColor="#12B7F5"
+            app:seg_textSize="15sp"
+            app:seg_outerRadii="2dp"
+            app:seg_outerMarginWidth="1dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <lib.hs.segmentedbarview.SegmentedBarView
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:seg_selectedTextColor="#00A5E0"
+        app:seg_unSelectedTextColor="@android:color/white"
+        app:seg_selectedColor="@android:color/white"
+        app:seg_unSelectedColor="#12B7F5"
+        app:seg_textSize="15sp"
+        app:seg_outerRadii="2dp"
+        app:seg_outerMarginWidth="1dp"
+        app:seg_isCircleFrame="true"
+        app:seg_isShowLine="true"
+        android:id="@+id/segmentedBarView1"/>
+
+
+
+</LinearLayout>
