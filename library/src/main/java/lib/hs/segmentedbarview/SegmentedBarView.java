@@ -26,15 +26,6 @@ import java.util.List;
 public class SegmentedBarView extends View{
 
 
-
-    private Paint mBgPaint;
-    private Paint mSegPaint;
-    private Paint mTextPaint;
-    private Rect mRect;
-    private Shape mRoundRectShape, mLeftRoundRectShape, mRightRoundRectShape, mRectShape;
-
-    private List<SegmentItem> mShapeEntities = new ArrayList<>();
-
     private int outerMarginColor;
     private float outerMarginWidth;
     private float outerRadii;
@@ -45,6 +36,14 @@ public class SegmentedBarView extends View{
     private boolean isShowLine;
     private int mTextSize;
     private boolean isCircleFrame;
+
+    private Paint mBgPaint;
+    private Paint mSegPaint;
+    private Paint mTextPaint;
+    private Rect mRect;
+    private Shape mRoundRectShape, mLeftRoundRectShape, mRightRoundRectShape, mRectShape;
+
+    private List<SegmentItem> mShapeEntities = new ArrayList<>();
 
     private int select;
 
@@ -127,6 +126,62 @@ public class SegmentedBarView extends View{
 
     public void setSelect(int select) {
         this.select = select;
+    }
+
+    public int getOuterMarginColor() {
+        return outerMarginColor;
+    }
+
+    public void setOuterMarginColor(int outerMarginColor) {
+        this.outerMarginColor = outerMarginColor;
+    }
+
+    public int getSelectedColor() {
+        return selectedColor;
+    }
+
+    public void setSelectedColor(int selectedColor) {
+        this.selectedColor = selectedColor;
+    }
+
+    public int getUnSelectedColor() {
+        return unSelectedColor;
+    }
+
+    public void setUnSelectedColor(int unSelectedColor) {
+        this.unSelectedColor = unSelectedColor;
+    }
+
+    public int getSelectedTextColor() {
+        return selectedTextColor;
+    }
+
+    public void setSelectedTextColor(int selectedTextColor) {
+        this.selectedTextColor = selectedTextColor;
+    }
+
+    public int getUnSelectedTextColor() {
+        return unSelectedTextColor;
+    }
+
+    public void setUnSelectedTextColor(int unSelectedTextColor) {
+        this.unSelectedTextColor = unSelectedTextColor;
+    }
+
+    public boolean isShowLine() {
+        return isShowLine;
+    }
+
+    public void setShowLine(boolean showLine) {
+        isShowLine = showLine;
+    }
+
+    public boolean isCircleFrame() {
+        return isCircleFrame;
+    }
+
+    public void setCircleFrame(boolean circleFrame) {
+        isCircleFrame = circleFrame;
     }
 
     @Override
