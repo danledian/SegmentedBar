@@ -220,7 +220,6 @@ public class SegmentedBarView extends View{
     private boolean isContain(float x, float y){
         return x >=outerMarginWidth  && x <= getMeasuredWidth() - outerMarginWidth &&
                 y > outerMarginWidth && y <= getMeasuredHeight() - outerMarginWidth;
-
     }
 
 
@@ -234,7 +233,9 @@ public class SegmentedBarView extends View{
     }
 
     private int getPosition(float y){
-        return (int) ((y - outerMarginWidth)/getSegWidth());
+       int position = (int) ((y - outerMarginWidth)/getSegWidth());
+        position = Math.max(0, Math.min(position, getCount() - 1));
+        return position;
     }
 
 
