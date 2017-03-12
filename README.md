@@ -6,7 +6,7 @@
 
 
 
-![效果图](https://github.com/danledian/SegmentedBar/blob/master/image/show.png)
+![效果图](https://github.com/danledian/SegmentedBar/blob/master/image/seg.gif)
 
 
 ## 使用介绍
