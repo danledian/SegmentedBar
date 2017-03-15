@@ -13,7 +13,7 @@ import lib.hs.segmentedbarview.SegmentedBarView;
 
 /**
  * @author husong
- * @deprecated github：https://github.com/danledian/SegmentedBar
+ * github：https://github.com/danledian/SegmentedBar
  *
  */
 public class MainActivity extends AppCompatActivity {

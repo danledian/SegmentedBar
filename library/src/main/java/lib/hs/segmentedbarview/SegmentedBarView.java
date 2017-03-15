@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * Created by husong on 2017/3/10.
- * deprecated github：https://github.com/danledian/SegmentedBar
+ * github：https://github.com/danledian/SegmentedBar
  */
 
 public class SegmentedBarView extends View{
