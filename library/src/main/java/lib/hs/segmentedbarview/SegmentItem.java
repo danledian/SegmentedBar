@@ -3,6 +3,7 @@ package lib.hs.segmentedbarview;
 
 /**
  * Created by husong on 2017/3/10.
+ *
  */
 
 public class SegmentItem {

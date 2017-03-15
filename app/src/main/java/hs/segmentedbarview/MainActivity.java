@@ -11,6 +11,11 @@ import java.util.Locale;
 import lib.hs.segmentedbarview.SegmentItem;
 import lib.hs.segmentedbarview.SegmentedBarView;
 
+/**
+ * @author husong
+ * @deprecated github：https://github.com/danledian/SegmentedBar
+ *
+ */
 public class MainActivity extends AppCompatActivity {
 
 
